@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Checkout page</title>
+  </head>
+  <body>
+    <section class="checkout font-sans font-semibold">
+      <div class="checkout__wrapper max-w-[984px] px-3 m-auto my-8 md:my-16">
+      <h1 class="font-semibold mb-5 sm:mb-12 text-gray text-[24px] sm:text-[36px]">Checkout</h1>
+      <div class="checkout__info flex flex-wrap lg:flex-nowrap  justify-center lg:items-start lg:justify-between">
+        <div class="checkout__form">
+          <form action="" method="get">
+            <div class="checkout__form__block">
+              <h2 class="checkout__form__title">Contact infomation</h2>
+              <label
+                for="email"
+                class="form__label"
+                >E-mail</label
+              >
+              <div class="form__input__item mt-2 flex items-center">
+                <span class="material-icons outlined"> email </span>
+                <input
+                  type="email"
+                  name="email"
+                  id="1"
+                  class="form__input"
+                  placeholder="Enter your email..."
+                />
+              </div>
+              <label for="phone" class="form__label">Phone</label>
+              <div class="form__input__item mt-2 flex items-center">
+                <span class="material-icons outlined"> phone </span>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="2"
+                  class="form__input"
+                  placeholder="Enter your phone..."
+                />
+              </div>
+            </div>
+            <div class="checkout__form__block mt-14">
+              <h2 class="checkout__form__title">Shipping address</h2>
+              <label for="name" class="form__label">Full name</label>
+              <div class="form__input__item mt-2 flex items-center">
+                <span class="material-icons outlined"> account_circle </span>
+                <input
+                  type="text"
+                  name="text"
+                  id="3"
+                  class="form__input"
+                  placeholder="Your full name..."
+                />
+              </div>
+              <label for="address" class="form__label">Address</label>
+              <div class="form__input__item mt-2 flex items-center">
+                <span class="material-icons outlined"> home </span>
+                <input
+                  type="text"
+                  name="address"
+                  id="4"
+                  class="form__input"
+                  placeholder="Your address.."
+                />
+              </div>
+
+              <label for="city" class="form__label">City</label>
+              <div class="form__input__item mt-2 flex items-center">
+                <span class="material-icons outlined"> location_city </span>
+                <input
+                  type="text"
+                  name="city"
+                  id="5"
+                  class="form__input"
+                  placeholder="Your city.."
+                />
+              </div>
+
+              <div class="form__inputs flex flex-wrap sm:flex-nowrap w-full lg:justify-between">
+                <div class="w-full sm:mr-3 lg:mr-0">
+                <label for="postal" class="form__label">Country</label>
+                <div class="form__input__item w-full lg:max-w-[217px] px-3">
+                  <span class="material-icons outlined"> public </span>
+                  <div class="select__country w-full flex relative">
+                    <select class="w-full" name="" id="">  
+                      <option selected disabled value="country">
+                        <div class="flex items-center justify-between">
+                          <p class="mr-5 min-w-[120px]">Your country..</p> 
+                          </div>
+                      </option> 
+                    <ul class="select__ul">
+                      <ul class="select__ul__low" name="select" id="">
+                            <option value="1">
+                            <li class="select__li">
+                              <p class="mr-3">Chine</p>
+                              <img
+                                class="select__ul__img max-w-[20px]"
+                                src="./img/country/china.png"
+                                alt="Chine"
+                                width="20px"
+                              />
+                            </li>
+                          </option>
+                          <option value="">
+                            <li class="select__li">
+                              <p class="mr-3">USA</p>
+                              <img
+                                class="select__ul__img max-w-[20px]"
+                                src="./img/country/united-states.png"
+                                alt="USA"
+                                width="20px"
+                              />
+                            </li>
+                          </option>
+                              <option value="">
+                            <li class="select__li">
+                              <p class="mr-3">Ukraine</p>
+                              <img
+                                class="select__ul__img max-w-[20px]"
+                                src="./img/country/ukraine.png"
+                                alt="Ukraine"
+                                width="20px"
+                              />
+                            </li>
+                          </option>
+                      </ul>
+                      </select>
+                  </div>
+                </div>
+              </div>
+                <div class="w-full">
+                <label for="postal" class="form__label">Postal code</label>
+                <div class="form__input__item w-full lg:max-w-[217px]">
+                  <span class="material-icons outlined">
+                    markunread_mailbox
+                  </span>
+                  <input
+                    type="text"
+                    name="postal"
+                    id="6"
+                    class="form__input"
+                    placeholder="Your postal code.."
+                  />
+                </div>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="checkout__check flex items-center">
+              <input type="checkbox" name="save" id="saveinfo" class="mr-2 w-5 h-5 bg-transparent border-[1px] border-gray-3 ">
+              <label class="font-semibold text-sl text-gray-2" for="save">Save this information for next time</label>
+            </div>
+
+            <div class="checkout__send flex justify-end mt-6">
+              <button class="bg-orange text-white text-md font-semibold rounded-xl p-4 max-w-[166px] w-full" type="submit">Continue</button>
+            </div>
+          </form>
+        </div>
+        <aside
+          class="checkout__shopcards"
+        >
+        <div class="lg:block flex flex-wrap sm:flex-nowrap sm:justify-around lg:justify-start w-full">
+          <div class="checkout__card mr-3 mb-8 md:mb-8 md:mx-4 md:mt-4">
+            <img
+              src="./img/backpack.png"
+              alt="backpack"
+              class="checkout__card__img"
+            />
+            <div class="checkout__card__info flex flex-col">
+              <h2 class="card__title">Vintage Backbag</h2>
+              <div class="card__price mt-[6px] mb-6">
+                $<span class="card__price__new">54.99</span>
+                <span id="price__old" class="card__price__old">$94.99</span>
+              </div>
+              <div class="card__counter card1__counter">
+                <button data-action="decrement" class="counter__btn dec">
+                  <span class="text-gray-3">−</span>
+              </button>
+              <input type="number" class="counter__show" name="custom-input-number1" value="1" disabled></input>
+              <button data-action="increment" class="counter__btn inc">
+                  <span class="text-gray-3">+</span>
+              </button>
+              </div>
+            </div>
+          </div>
+          <div class="checkout__card">
+            <img
+              src="./img/shoes.png"
+              alt="backpack"
+              class="checkout__card__img"
+            />
+            <div class="checkout__card__info flex flex-col">
+              <h2 class="card__title">Levi Shoes</h2>
+              <div class="card__price mt-[6px] mb-6">
+                $<span class="card__price__new">74.99</span>
+                <span class="card__price__old">$124.99</span>
+              </div>
+              <div class="card__counter card2__counter">
+                <button data-action="decrement-2" class="counter__btn dec">
+                  <span class="text-gray-3">−</span>
+              </button>
+              <input type="number" class="counter__show" name="custom-input-number2" value="1" disabled></input>
+              <button data-action="increment-2" class="counter__btn inc">
+                  <span class="text-gray-3">+</span>
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="w-full">
+          <div class="checkout__total">
+            <div class="checkout__total__item text-gray-1">
+              <h4 class="total__name">Shipping</h4>
+              <span class="checkout__total__shipping">$19</span>
+            </div>
+            <div class="checkout__total__item text-gray-1">
+              <h4 class="total__name">Total</h4>
+              <span class="checkout__total__shipping total__shipping">$148.98</span>
+            </div>
+          </div>
+        </div>
+        </div>
+        </aside>
+      </div>
+    </section>
+    <footer class="footer w-full z-10 bg-white bottom-0 py-6 px-3 text-center mx-auto mt-4 font-semibold text-sm text-gray-4">created by <a href="#"><b>Paul Larin</b></a> - <a href="#">devChallenges.io</a></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
