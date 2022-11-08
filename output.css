@@ -532,6 +532,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(242 153 74 / var(--tw-text-opacity));
 }
+.text__orange {
+  --tw-text-opacity: 1;
+  color: rgb(242 153 74 / var(--tw-text-opacity));
+}
 
 .card__price__old {
   font-size: 12px;
