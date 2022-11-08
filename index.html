@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="/dist/output.css" />
     <title>Checkout page</title>
   </head>
   <body>
@@ -182,7 +182,7 @@
             <div class="checkout__card__info flex flex-col">
               <h2 class="card__title">Vintage Backbag</h2>
               <div class="card__price mt-[6px] mb-6">
-                $<span class="card__price__new">54.99</span>
+                <span class="text-orange">$<span class="card__price__new">54.99</span></span>
                 <span id="price__old" class="card__price__old">$94.99</span>
               </div>
               <div class="card__counter card1__counter">
@@ -205,7 +205,7 @@
             <div class="checkout__card__info flex flex-col">
               <h2 class="card__title">Levi Shoes</h2>
               <div class="card__price mt-[6px] mb-6">
-                $<span class="card__price__new">74.99</span>
+                <span class="text-orange">$<span class="card__price__new">74.99</span></span>
                 <span class="card__price__old">$124.99</span>
               </div>
               <div class="card__counter card2__counter">
@@ -228,7 +228,8 @@
             </div>
             <div class="checkout__total__item text-gray-1">
               <h4 class="total__name">Total</h4>
-              <span class="checkout__total__shipping total__shipping">$148.98</span>
+              <span>
+              $<span class="checkout__total__shipping total__shipping">148.98</span></span>
             </div>
           </div>
         </div>
@@ -238,6 +239,6 @@
     </section>
     <footer class="footer w-full z-10 bg-white bottom-0 py-6 px-3 text-center mx-auto mt-4 font-semibold text-sm text-gray-4">created by <a href="#"><b>Paul Larin</b></a> - <a href="#">devChallenges.io</a></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./script.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
